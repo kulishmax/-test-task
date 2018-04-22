@@ -1,0 +1,59 @@
+.logo {
+  background-image: url("../img/Logo.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 89px;
+  height: 22px;
+  display: inline-block;
+  padding: 33px 20px; }
+
+.header .menu__link-text {
+  font-size: 14px;
+  color: #8d8d8c; }
+
+.menu__list {
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 1100px) {
+    .menu__list {
+      display: none !important; } }
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid rgba(28, 27, 26, 0.1); }
+  .header .container {
+    display: flex; }
+    .header .container .menu {
+      width: 100%; }
+      .header .container .menu .menu__list {
+        display: flex;
+        justify-content: center; }
+        .header .container .menu .menu__list .menu__item {
+          cursor: pointer;
+          padding: 25px 20px; }
+          .header .container .menu .menu__list .menu__item:hover {
+            border-bottom: 1px solid #2985F7; }
+            .header .container .menu .menu__list .menu__item:hover .menu__link-text {
+              color: #1C1B1A; }
+
+.menu__butget {
+  position: relative;
+  display: none; }
+  @media screen and (max-width: 1100px) {
+    .menu__butget {
+      display: block; } }
+
+.menu__butget-icon {
+  background-image: url("../img/butger-button.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 21px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer; }

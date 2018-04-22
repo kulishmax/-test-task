@@ -1,0 +1,38 @@
+.footer {
+	height: 80px;
+	margin-top: 5px;
+	position: relative;
+  border-top: 1px solid rgba(28, 27, 26, 0.1);
+	display: flex;
+  align-items: center;
+}
+
+.empty {
+	height: 80px;
+}
+
+.footer__menu {
+	.menu {
+		display: flex;
+
+		.menu__item {
+			margin: 1%;
+			@media screen and (max-width: 1100px) {
+				display: none;
+			}
+		}
+	}
+}
+
+.menu__link-text {
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, 0.7);
+	&:hover {
+		color: #1C1B1A;
+	}
+}
+
+.menu__copyright {
+	margin: 1%;
+}
