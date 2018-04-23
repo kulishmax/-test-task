@@ -17,8 +17,15 @@
 .menu__list {
 	display: flex;
 	justify-content: center;
+
 	@media screen and (max-width: 1100px) {
-		display: none!important;
+    position: absolute;
+    flex-direction: column;
+    right: 2px;
+    top: 69px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 4px 12px -1px rgba(0,0,0,0.75);
 	}
 }
 
@@ -37,10 +44,16 @@
 				.menu__item {
 					cursor: pointer;
 			 		padding: 25px 20px;
+			 		@media screen and (max-width: 1100px) {
+			 			padding: 20px 20px;
+			 		}
 					&:hover {
 						border-bottom: 1px solid #2985F7;
 						.menu__link-text {
 							color: #1C1B1A;
+						}
+						@media screen and (max-width: 1100px) {
+							border: unset;
 						}
 					}
 				}

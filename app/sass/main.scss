@@ -72,12 +72,21 @@ a {
 
 /* ------Content------ */
 
-.table-view-icon {
+.table-view-active {
 	@include tittle-icon ("table-view-icon");
   width: 18px;
   height: 17px;
   margin-right: 15px;
   cursor: pointer;
+}
+
+.table-view-disabled {
+	@include tittle-icon ("table-view-icon2");
+  width: 18px;
+  height: 17px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: none;
 }
 
 .vertical-icon {
@@ -86,12 +95,21 @@ a {
   height: 30px;
 }
 
-.card-view-icon {
+.card-view-disabled {
 	@include tittle-icon ("card-view-icon");
   width: 18px;
   height: 18px;
   margin-left: 15px;
   cursor: pointer;
+}
+
+.card-view-active {
+	@include tittle-icon ("card-view-icon2");
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: none;
 }
 
 .section-tittle {
@@ -266,7 +284,6 @@ border-bottom: 1px solid rgba(28, 27, 26, 0.1);
   grid-template-columns: auto auto auto auto;
   grid-row-gap: 24px;
   grid-column-gap: 5px;
-  justify-content: center;
 
   @media screen and (max-width: 1300px) {
   	grid-template-columns: auto auto auto;
@@ -278,6 +295,7 @@ border-bottom: 1px solid rgba(28, 27, 26, 0.1);
 
   @media screen and (max-width: 640px) {
   	grid-template-columns: auto;
+  	justify-content: center;
   }
 
 }
