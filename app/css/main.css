@@ -304,16 +304,16 @@ table {
   grid-template-columns: auto auto auto auto;
   grid-row-gap: 24px;
   grid-column-gap: 5px; }
-  @media screen and (max-width: 1300px) {
-    .card-view__content {
-      grid-template-columns: auto auto auto; } }
-  @media screen and (max-width: 950px) {
-    .card-view__content {
-      grid-template-columns: auto auto; } }
   @media screen and (max-width: 640px) {
     .card-view__content {
       grid-template-columns: auto;
       justify-content: center; } }
+  @media screen and (max-width: 950px) {
+    .card-view__content {
+      grid-template-columns: auto auto; } }
+  @media screen and (max-width: 1300px) {
+    .card-view__content {
+      grid-template-columns: auto auto auto; } }
 
 .content__item {
   width: 282px;
